@@ -1,0 +1,26 @@
+<section>
+    <div class="container">
+        <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+            <div class="contact">
+                <div class="contact__box_titles">
+                    <h2 class="contact__title">Контакт</h2>
+                    <p class="contact__subtitle">Вы работаете над чем-то большим? Я хотел бы помочь в этом! Напишите мне письмо и мы начнем свой проект прямо сейчас!</p>
+                </div>
+                <div class="contact__box_data">
+                    <div class="contact__box_name">
+                        <input [(ngModel)]="name" name="name" placeholder="Имя" class="contact__name" required>
+                    </div>
+                    <div class="contact__box_email">
+                        <input [(ngModel)]="email" name="email" placeholder="E-mail" class="contact__email" required email>
+                    </div>
+                </div>
+                <div class="contact__box_message">
+                    <div class="contact__box_textarea">
+                        <input [(ngModel)]="message" name="message" placeholder="Сообщение" class="contact__textarea" required>
+                    </div>
+                    <input type="submit" placeholder="ОТПРАВИТЬ СООБЩЕНИЕ" class="contact__btn" [disabled]="myForm.invalid">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

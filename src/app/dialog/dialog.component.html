@@ -1,0 +1,28 @@
+<div class="dialog__bg"></div>
+
+<div class="dialog__box_absolute">
+    <div class="dialog__box">
+        <div class="dialog__box_content">
+            <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+                <p class="dialog__title">Давайте работать вместе</p>
+                <p class="dialog__subtitle">Вы работаете над чем-то большим? Я хотел бы помочь в этом! Напишите мне письмо и мы начнем свой проект прямо сейчас!</p>
+                <div class="dialog__box_form">
+                    <div class="dialog__box_input">
+                        <div class="dialog__box_name">
+                            <input [(ngModel)]="name" name="name" placeholder="Имя" class="dialog__name" required>
+                        </div>
+                        <div class="dialog__box_email">
+                            <input [(ngModel)]="email" name="email" placeholder="E-mail" class="dialog__email" required email>
+                        </div>
+                    </div>
+                    <div class="dialog__box_textarea">
+                        <input [(ngModel)]="message" name="message" placeholder="Сообщение" class="dialog__textarea" required>
+                    </div>
+                </div>
+                
+                <input type="submit" placeholder="ОТПРАВИТЬ СООБЩЕНИЕ" class="dialog__btn_send" [disabled]="myForm.invalid">
+                <a routerLink="/"><button class="dialog__btn_back">ВЕРНУТЬСЯ К РЕЗЮМЕ</button></a>
+            </form>
+        </div>
+    </div>
+</div>

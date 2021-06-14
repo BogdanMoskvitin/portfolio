@@ -1,0 +1,108 @@
+.education {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+@media(max-width: 990px) {
+    .education {
+        flex-wrap: wrap;
+    }
+}
+.education__box_titles {
+    padding: 0 15px;
+    flex-basis: 50%;
+}
+@media(max-width: 990px) {
+    .education__box_titles {
+        flex-basis: auto;
+    }
+}
+@media(max-width: 570px) {
+    .education__box_titles {
+        padding: 0 5px;
+    }
+}
+.education__subtitle {
+    margin-bottom: 20px;
+}
+.education__box_list {
+    padding: 0 15px;
+}
+@media(max-width: 570px) {
+    .education__box_list {
+        padding: 0 5px;
+    }
+}
+.education__box_item {
+    position: relative;
+    width: 500px;
+    min-height: 30px;
+}
+@media(max-width: 570px) {
+    .education__box_item {
+        width: 300px;
+    }
+    .education__box_item:last-child {
+        margin-top: 15px;
+    }
+}
+.education__item_img {
+    position: absolute;
+    left: 0;
+}
+.education__item_name {
+    position: absolute;
+    left: 25px;
+}
+.education__item_link {
+    position: absolute;
+    left: 125px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #d2dce6;
+}
+.education__item_link {
+    a {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #d2dce6;
+        transition: all 0.4s ease-in-out;
+    }
+    a:hover {
+        color: #3333ff;
+    }
+}
+#html::before {
+    content: 'https://html5book.ru/html-html5/';
+}
+#css::before {
+    content: 'https://html5book.ru/css-css3/';
+}
+#js::before {
+    content: 'https://learn.javascript.ru/';
+}
+#rxjs::before {
+    content: 'https://rxjs-dev.firebaseapp.com/guide/overview';
+}
+#angular::before {
+    content: 'https://angular.io/';
+}
+@media(max-width: 570px) {
+    #html::before {
+        content: 'https://html5';
+    }
+    #css::before {
+        content: 'https://css3';
+    }
+    #js::before {
+        content: 'https://javascript';
+    }
+    #rxjs::before {
+        content: 'https://rxjs';
+    }
+    #angular::before {
+        content: 'https://angular';
+    }
+}

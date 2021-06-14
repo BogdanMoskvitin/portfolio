@@ -1,0 +1,180 @@
+input.ng-touched.ng-invalid {border:solid red 2px;}
+input.ng-touched.ng-valid {border:solid green 2px;}
+
+.dialog__bg {
+    position: absolute; 
+    background-color: black;  
+    width: 100%; 
+    height: 100%; 
+    opacity: 0.5;
+}
+.dialog__box_absolute {
+    position: absolute;
+    top: 150px; left: 0; bottom: 0; right: 0;
+}
+.dialog__box {
+    margin: auto;
+    max-width: 850px;
+    min-height: 404px; 
+    background-color: #fff; 
+}
+.dialog__box_content {
+    padding: 40px;
+}
+.dialog__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.dialog__subtitle {
+    font-size: 16px;
+    color: #252525;
+    margin-bottom: 20px;
+}
+.dialog__box_form {
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 900px) {
+    .dialog__box_form {
+        flex-wrap: wrap;
+    }
+}
+.dialog__box_input {
+    width: 100%;
+    padding-right: 15px;
+}
+@media(max-width: 900px) {
+    .dialog__box_input {
+        padding: 0;
+    }
+}
+.dialog__box_name {
+    border: 2px solid rgba($color: #3333ff, $alpha: 0);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+.dialog__name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 44px;
+    width: 100%;
+    border: 1px solid #d2dce6;
+    border-radius: 2px;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    outline: none;
+    display: block;
+    box-sizing: border-box;
+}
+.dialog__box_name:hover {
+    border: 2px solid rgba($color: #3333ff, $alpha: 1);
+}
+.dialog__box_name:focus {
+    border: 2px solid rgba($color: #3333ff, $alpha: 1);
+}
+.dialog__box_email {
+    border: 2px solid rgba($color: #3333ff, $alpha: 0);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+.dialog__email {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 44px;
+    width: 100%;
+    border: 1px solid #d2dce6;
+    border-radius: 2px;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    outline: none;
+    display: block;
+    box-sizing: border-box;
+}
+.dialog__box_email:hover {
+    border: 2px solid rgba($color: #3333ff, $alpha: 1);
+}
+.dialog__box_email:focus {
+    border: 2px solid rgba($color: #3333ff, $alpha: 1);
+}
+.dialog__box_textarea {
+    border: 2px solid rgba($color: #3333ff, $alpha: 0);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+.dialog__textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    width: 424px;
+    border: 1px solid #d2dce6;
+    border-radius: 2px;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    outline: none;
+    resize: none;
+    display: block;
+    box-sizing: border-box;
+}
+@media(max-width: 900px) {
+
+    .dialog__box_textarea {
+        width: 100%;
+    }
+    .dialog__textarea {
+        width: 100%;
+    }
+}
+.dialog__box_textarea:hover {
+    border: 2px solid rgba($color: #3333ff, $alpha: 1);
+}
+.dialog__box_textarea:focus {
+    border: 2px solid rgba($color: #3333ff, $alpha: 1);
+}
+.dialog__btn_send {
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    width: 170px;
+    height: 50px;
+    background-color: #3333ff;
+    color: #fff;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.dialog__btn_send:hover {
+    box-shadow: 10px 10px 30px 0px rgba($color: #3333ff, $alpha: 0.3);
+}
+.dialog__btn_back {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    width: 170px;
+    height: 50px;
+    background: #efefef;
+    color: #252525;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.dialog__btn_back:hover {
+    box-shadow: 10px 10px 30px 0px rgba($color: #d2dce6, $alpha: 1.0);
+}
+@media(max-width: 450px) {
+    .dialog__btn_send {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .dialog__btn_back {
+        width: 100%;
+    }
+}

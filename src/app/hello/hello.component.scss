@@ -1,0 +1,170 @@
+.hello {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+@media(max-width: 990px) {
+    .hello {
+        flex-wrap: wrap-reverse;
+    }
+}
+.hello__box_content {
+    padding: 0 15px;
+}
+@media(max-width: 570px) {
+    .hello__box_content {
+        padding: 0 5px;
+    }
+}
+.hello__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+@media(max-width: 410px) {
+    .hello__title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+    }
+}
+.hello__subtitle {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.hello__info {
+    margin-bottom: 30px;
+}
+.hello__box_phone {
+    margin-bottom: 10px;
+}
+.hello__title_phone {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: block;
+    float: left;
+}
+.hello__number_phone {
+    padding-left: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: block;
+    text-decoration-line: none;
+    color: #000;
+}
+.hello__box_email {
+    margin-bottom: 10px;
+}
+.hello__title_email {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: block;
+    float: left;
+}
+.hello__adress_email {
+    padding-left: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: block;
+    text-decoration-line: none;
+    color: #000;
+}
+.hello__box_adress {
+    margin-bottom: 10px;
+}
+.hello__title_adress {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: block;
+    float: left;
+}
+.hello__data_adress {
+    padding-left: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: block;
+}
+.hello__box_social {
+    margin-bottom: 10px;
+}
+.hello__title_social {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: block;
+    float: left;
+}
+.hello__icons_social {
+    padding-left: 110px;
+    display: block;
+}
+.hello__github_icon {
+    padding-right: 20px;
+}
+.hello__whatsapp_icon {
+    padding-right: 20px;
+}
+.hello__contact_btn {
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    width: 170px;
+    height: 50px;
+    background-color: #3333ff;
+    color: #fff;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.hello__contact_btn:hover {
+    box-shadow: 10px 10px 30px 0px rgba($color: #3333ff, $alpha: 0.3);
+}
+.hello__download_btn {
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    width: 170px;
+    height: 50px;
+    background-color: #d2dce6;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.hello__download_btn:hover {
+    box-shadow: 10px 10px 30px 0px rgba($color: #d2dce6, $alpha: 1.0);
+}
+@media(max-width: 460px) {
+    .hello__contact_btn {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .hello__download_btn {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.hello__box_img {
+    padding: 0 15px;
+}
+.hello__img {
+    max-width: 500px;
+    height: auto;
+}
+@media(max-width: 990px) {
+    .hello__img {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+@media(max-width: 570px) {
+    .hello__box_img {
+        padding: 0 5px;
+    }
+}

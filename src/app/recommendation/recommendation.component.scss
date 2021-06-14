@@ -1,0 +1,18 @@
+.recommendation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+}
+@media(max-width: 990px) {
+    .recommendation {
+        flex-wrap: wrap;
+    }
+}
+.recommendation__box_titles {
+    padding: 0 15px;
+}
+.recommendation__box_recommendation {
+    padding: 0 15px;
+    margin-top: 20px;
+}
