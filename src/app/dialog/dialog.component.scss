@@ -31,6 +31,15 @@ input.ng-touched.ng-valid {border:solid green 2px;}
     color: #252525;
     margin-bottom: 20px;
 }
+@media(max-width: 524px) {
+    .dialog__title {
+        font-size: 26px;
+    }
+    .dialog__subtitle {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
 .dialog__box_form {
     display: flex;
     justify-content: space-between;
@@ -120,7 +129,6 @@ input.ng-touched.ng-valid {border:solid green 2px;}
     box-sizing: border-box;
 }
 @media(max-width: 900px) {
-
     .dialog__box_textarea {
         width: 100%;
     }
@@ -133,6 +141,17 @@ input.ng-touched.ng-valid {border:solid green 2px;}
 }
 .dialog__box_textarea:focus {
     border: 2px solid rgba($color: #3333ff, $alpha: 1);
+}
+@media(max-width: 524px) {
+    .dialog__box_name {
+        margin-bottom: 10px;
+    }
+    .dialog__box_email {
+        margin-bottom: 10px;
+    }
+    .dialog__box_textarea {
+        margin-bottom: 10px;
+    }
 }
 .dialog__btn_send {
     margin-right: 30px;
@@ -172,7 +191,7 @@ input.ng-touched.ng-valid {border:solid green 2px;}
 @media(max-width: 450px) {
     .dialog__btn_send {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     .dialog__btn_back {
         width: 100%;

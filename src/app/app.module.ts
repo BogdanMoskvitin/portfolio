@@ -15,6 +15,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { SkillsComponent } from './skills/skills.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DescriptionComponent } from './description/description.component'
 
 @NgModule({
   declarations: [
@@ -28,13 +30,15 @@ import { DialogComponent } from './dialog/dialog.component';
     PortfolioComponent,
     RecommendationComponent,
     SkillsComponent,
-    DialogComponent
+    DialogComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SidebarModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

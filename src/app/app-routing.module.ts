@@ -6,6 +6,7 @@ import { HelloComponent } from './hello/hello.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
+import { DescriptionComponent } from './description/description.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { ContactComponent } from './contact/contact.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'skills', component: SkillsComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'education', component: EducationComponent },
+  { path: 'description', component: DescriptionComponent},
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'recommendation', component: RecommendationComponent },
   { path: 'contact', component: ContactComponent },

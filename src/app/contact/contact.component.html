@@ -1,6 +1,7 @@
 <section>
     <div class="container">
-        <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
             <div class="contact">
                 <div class="contact__box_titles">
                     <h2 class="contact__title">Контакт</h2>
@@ -8,17 +9,17 @@
                 </div>
                 <div class="contact__box_data">
                     <div class="contact__box_name">
-                        <input [(ngModel)]="name" name="name" placeholder="Имя" class="contact__name" required>
+                        <input type="text" placeholder="Имя" name="name" ngModel required #name="ngModel" class="contact__name">
                     </div>
                     <div class="contact__box_email">
-                        <input [(ngModel)]="email" name="email" placeholder="E-mail" class="contact__email" required email>
+                        <input type="text" placeholder="E-mail" email name="email" ngModel required #email="ngModel" class="contact__email">
                     </div>
                 </div>
                 <div class="contact__box_message">
                     <div class="contact__box_textarea">
-                        <input [(ngModel)]="message" name="message" placeholder="Сообщение" class="contact__textarea" required>
+                        <textarea placeholder="Сообщение" name="messages" ngModel required #messages="ngModel" class="contact__textarea"></textarea>
                     </div>
-                    <input type="submit" placeholder="ОТПРАВИТЬ СООБЩЕНИЕ" class="contact__btn" [disabled]="myForm.invalid">
+                    <input type="submit" value="ОТПРАВИТЬ СООБЩЕНИЕ" class="contact__btn">
                 </div>
             </div>
         </form>

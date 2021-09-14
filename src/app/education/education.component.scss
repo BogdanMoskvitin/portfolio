@@ -42,9 +42,6 @@
     .education__box_item {
         width: 300px;
     }
-    .education__box_item:last-child {
-        margin-top: 15px;
-    }
 }
 .education__item_img {
     position: absolute;
@@ -84,10 +81,16 @@
     content: 'https://learn.javascript.ru/';
 }
 #rxjs::before {
-    content: 'https://rxjs-dev.firebaseapp.com/guide/overview';
+    content: 'https://rxjs-dev.firebaseapp.com/guide/overview/';
 }
 #angular::before {
     content: 'https://angular.io/';
+}
+#react::before {
+    content: 'https://ru.reactjs.org/';
+}
+#vuejs::before {
+    content: 'https://vuejs.org/';
 }
 @media(max-width: 570px) {
     #html::before {
@@ -104,5 +107,9 @@
     }
     #angular::before {
         content: 'https://angular';
+    }
+
+    #book-pattern {
+        margin-bottom: 20px;
     }
 }
