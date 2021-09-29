@@ -86,6 +86,9 @@
 #angular::before {
     content: 'https://angular.io/';
 }
+#webpack::before {
+    content: 'https://webpack.js.org/';
+}
 #react::before {
     content: 'https://ru.reactjs.org/';
 }
@@ -94,19 +97,19 @@
 }
 @media(max-width: 570px) {
     #html::before {
-        content: 'https://html5';
+        content: 'https://html5/';
     }
     #css::before {
-        content: 'https://css3';
+        content: 'https://css3/';
     }
     #js::before {
-        content: 'https://javascript';
+        content: 'https://javascript/';
     }
     #rxjs::before {
-        content: 'https://rxjs';
+        content: 'https://rxjs/';
     }
     #angular::before {
-        content: 'https://angular';
+        content: 'https://angular/';
     }
 
     #book-pattern {

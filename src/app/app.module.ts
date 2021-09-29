@@ -16,7 +16,8 @@ import { RecommendationComponent } from './recommendation/recommendation.compone
 import { SkillsComponent } from './skills/skills.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DescriptionComponent } from './description/description.component'
+import { DescriptionComponent } from './description/description.component';
+import { CompletedComponent } from './completed/completed.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DescriptionComponent } from './description/description.component'
     RecommendationComponent,
     SkillsComponent,
     DialogComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    CompletedComponent
   ],
   imports: [
     BrowserModule,
