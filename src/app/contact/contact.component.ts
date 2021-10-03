@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { ContactFormService } from '../contact-form.service';
 
 @Component({
   selector: 'app-contact',
@@ -9,22 +9,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor(private contactForm: ContactFormService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  onSubmit(contactForm: NgForm) {
-    if (contactForm.valid) {
-      const email = contactForm.value;
-      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-      this.http.post('https://formspree.io/f/mwkaalyw',
-      { name: email.name, replyto: email.email, message: email.messages },
-      { 'headers': headers }).subscribe(
-        response => {
-          console.log(response);
-        }
-      );
-    }
+  onSubmit(contactForm: NgForm){
+    this.contactForm.sendForm(contactForm)
+    contactForm.reset();
   }
 }

@@ -1,6 +1,9 @@
 input.ng-touched.ng-invalid {border:solid red 2px;}
 input.ng-touched.ng-valid {border:solid green 2px;}
 
+textarea.ng-touched.ng-invalid {border:solid red 2px;}
+textarea.ng-touched.ng-valid {border:solid green 2px;}
+
 .contact {
     display: flex;
     justify-content: space-between;
@@ -166,4 +169,7 @@ input.ng-touched.ng-valid {border:solid green 2px;}
 }
 .contact__btn:hover {
     box-shadow: 10px 10px 30px 0px rgba($color: #3333ff, $alpha: 0.3);
+}
+.contact__btn:disabled {
+    background-color: #efefef;
 }

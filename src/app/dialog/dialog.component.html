@@ -20,7 +20,7 @@
                         <textarea placeholder="Сообщение" name="messages" ngModel required #messages="ngModel" class="dialog__textarea"></textarea>
                     </div>
                 </div>
-                <input type="submit" value="ОТПРАВИТЬ СООБЩЕНИЕ" class="dialog__btn_send">
+                <input type="submit" [disabled]="contactForm.invalid" value="ОТПРАВИТЬ СООБЩЕНИЕ" class="dialog__btn_send">
                 <a routerLink="/"><button class="dialog__btn_back">ВЕРНУТЬСЯ К РЕЗЮМЕ</button></a>
             </form>
         </div>

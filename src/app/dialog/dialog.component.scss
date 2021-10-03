@@ -1,6 +1,9 @@
 input.ng-touched.ng-invalid {border:solid red 2px;}
 input.ng-touched.ng-valid {border:solid green 2px;}
 
+textarea.ng-touched.ng-invalid {border:solid red 2px;}
+textarea.ng-touched.ng-valid {border:solid green 2px;}
+
 .dialog__bg {
     position: absolute; 
     background-color: black;  
@@ -170,6 +173,9 @@ input.ng-touched.ng-valid {border:solid green 2px;}
 }
 .dialog__btn_send:hover {
     box-shadow: 10px 10px 30px 0px rgba($color: #3333ff, $alpha: 0.3);
+}
+.dialog__btn_send:disabled {
+    background-color: #efefef;
 }
 .dialog__btn_back {
     font-family: 'Roboto', sans-serif;

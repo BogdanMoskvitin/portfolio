@@ -18,6 +18,7 @@ import { DialogComponent } from './dialog/dialog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DescriptionComponent } from './description/description.component';
 import { CompletedComponent } from './completed/completed.component'
+import { ContactFormService } from './contact-form.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { CompletedComponent } from './completed/completed.component'
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ContactFormService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

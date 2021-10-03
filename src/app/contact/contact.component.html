@@ -19,7 +19,7 @@
                     <div class="contact__box_textarea">
                         <textarea placeholder="Сообщение" name="messages" ngModel required #messages="ngModel" class="contact__textarea"></textarea>
                     </div>
-                    <input type="submit" value="ОТПРАВИТЬ СООБЩЕНИЕ" class="contact__btn">
+                    <input type="submit" [disabled]="contactForm.invalid" value="ОТПРАВИТЬ СООБЩЕНИЕ" class="contact__btn">
                 </div>
             </div>
         </form>
