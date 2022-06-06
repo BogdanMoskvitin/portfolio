@@ -98,22 +98,7 @@
     padding-left: 110px;
     display: block;
 }
-.hello__instagram_icon {
-    padding-right: 20px;
-    img{transition: all 0.4s ease-in-out;}
-    img:hover {filter: invert(23%) sepia(89%) saturate(5933%) hue-rotate(242deg) brightness(97%) contrast(109%);}
-}
-.hello__github_icon {
-    padding-right: 20px;
-    img{transition: all 0.4s ease-in-out;}
-    img:hover {filter: invert(23%) sepia(89%) saturate(5933%) hue-rotate(242deg) brightness(97%) contrast(109%);}
-}
-.hello__whatsapp_icon {
-    padding-right: 20px;
-    img{transition: all 0.4s ease-in-out;}
-    img:hover {filter: invert(23%) sepia(89%) saturate(5933%) hue-rotate(242deg) brightness(97%) contrast(109%);}
-}
-.hello__telegram_icon {
+.hello__icon {
     padding-right: 20px;
     img{transition: all 0.4s ease-in-out;}
     img:hover {filter: invert(23%) sepia(89%) saturate(5933%) hue-rotate(242deg) brightness(97%) contrast(109%);}
